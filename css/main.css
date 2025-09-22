@@ -25,22 +25,20 @@ body {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.my-links a {
+.link {
   margin-top: 0.5rem;
+  width: fit-content;
+  color: #e4e4ef;
+  text-decoration: underline;
 }
 
-.my-links a:hover {
+.link:hover {
   cursor: pointer;
-}
-
-.my-links a:visited {
-  color: inherit;
-}
-
-.my-links a:active {
-  color: inherit;
+  color: #e4e4ef;
+  text-decoration: underline;
 }
 
 /* Newton's Cradle Related Styles - Start */
@@ -74,10 +72,10 @@ body {
 }
 
 .ball.first {
-  animation: first_ball 1s alternate ease-in infinite;
+  animation: first-ball 1s alternate ease-in infinite;
 }
 
-@keyframes first_ball {
+@keyframes first-ball {
   0%{
     transform: rotate(45deg);
   }
@@ -87,10 +85,10 @@ body {
 }
 
 .ball.last {
-  animation: last_ball 1s alternate ease-out infinite;
+  animation: last-ball 1s alternate ease-out infinite;
 }
 
-@keyframes last_ball {
+@keyframes last-ball {
   50%{
     transform: rotate(0deg);
   }

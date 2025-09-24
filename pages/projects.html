@@ -17,9 +17,9 @@
       <h1>Here are some of my projects</h1>
       <div class="content-item-block">
         <h2>Yet Another Kilo</h2>
-        <p>
+        <span class="text-align-center">
           A minimalistic terminal based text editor with zero external depedencies
-        </p>
+        </span>
         <img
           src="/images/yak_demo.png"
           alt="Yet Another Kilo"
@@ -33,14 +33,18 @@
           > 
             <span class="link">the "kilo" text editor</span>
           </a>
-        </p>
-        <p>
           Apart from the basic viewing and editing operations, 
           kilo also supports basic syntax highlighting and searching.
-        </p>
-        <p>
+
           So far, this "Yet Another Kilo" implementation extends 
           a bit on syntax highlighting and improves searching.
+        </p>
+        <br />
+        <p>
+          While this project is not a clone/fork (in context for Git), most
+          of the code for this editor is from snaptoken's kilo. My intention behind trying this
+          out was to experience the challanges involved in directly interacting with the terminal
+          and to try some more of the good old C (98).
         </p>
         <br />
         <p>
@@ -55,8 +59,41 @@
             <span class="link">GitHub</span> 
           </a>
         </p>
-
       </div>
+
+      <div class="content-item-block">
+        <h2>Anon Stats X</h2>
+        <span class="text-align-center">
+          Flex Twitter / X followers from your anonymous accounts on your main account 
+        </span>
+        <img
+          src="/images/anon_stats_demo.png"
+          alt="Anon Stats X"
+        >
+        <img>
+        <p>
+          It's common for social media users to have anonymous accounts. Well some platforms
+          see it more than others. This project is a prototype of a simple idea, why not flex 
+          stats from your anon accounts onto your main accounts.
+        </p>
+        <p>
+          We allow users to link multiple
+          X / Twitter accounts, every account has a publicly accessible web page, owner of the 
+          account can decide what stats (experimented with just followers) shall be displayed 
+          (aggregated from the selected accounts they own).  
+          It was a fun little experiment where I got to implement a custom auth flow and
+          take care of the things accross the stack. 
+        </p>
+        <br />
+        <p>
+          Technologies Used - NestJS, Angular, PostgreSQL, OAuth, JWT
+        </p>
+        <p>
+          This thing ran on my localhost (excluding the PostgreSQL server, which was on Supabase).
+          So far haven't made the source code public.
+        </p>
+      </div>
+      <br />
     </div>
   </body>
 </html>

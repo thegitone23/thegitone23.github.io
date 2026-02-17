@@ -81,6 +81,12 @@ body {
   max-width: 98%;
 }
 
+@media (max-width: 36rem) {
+  .content-item-block p {
+    text-align: left;
+  }
+}
+
 .text-align-center {
   text-align: center;
 }

@@ -15,6 +15,34 @@
     </div>
     <div class="content">
       <h1>Here are some of my projects</h1>
+
+        <div class="content-item-block">
+          <h2>Chat D</h2>
+          <span class="text-align-center">
+            An LLM powered chatbot with additional capabilities like solving your low level design problems. 
+          </span>
+          <img
+            src="/images/chat_d_demo.png"
+            alt="Chat D"
+          >
+          </img>
+          <p>
+            Eveyone is building LLM wrappers these days. I wanted to have a go at it and also include some basic agentic capabilities.
+            The application has a very lightweight UI client and backend server (wrapping over Gemini API). The backend also 
+            exposes a basic python parser, which uses python's `compile()` and some
+            additional logic to validate and type check LLM generated code snippets.
+          </p>
+          <br />
+          <p>
+            Technologies Used - Python, FastAPI, HTMX, Water.css, Gemini API
+          </p>
+          <p>
+            Source code isn't public (yet)
+          </p>
+        </div>
+        <br />
+      </div>
+
       <div class="content-item-block">
         <h2>Yet Another Kilo</h2>
         <span class="text-align-center">
@@ -24,7 +52,7 @@
           src="/images/yak_demo.png"
           alt="Yet Another Kilo"
         >
-        <img>
+        </img>
         <p>
           This editor has been inspired by - 
           <a
@@ -68,7 +96,7 @@
           src="/images/anon_stats_demo.png"
           alt="Anon Stats X"
         >
-        <img>
+        </img>
         <p>
           It's common for social media users to have anonymous accounts. Well some platforms
           see it more than others. This project is a prototype of a simple idea, why not flex 

@@ -1,7 +1,7 @@
 html, body {
   height: 100%;
   font-family: 'Cantarell', sans-serif;
-  font-size: x-large;
+  font-size: clamp(1rem, 2vw, 1.4rem);
 }
 
 body {

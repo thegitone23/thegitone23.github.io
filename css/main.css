@@ -91,59 +91,6 @@ body {
   text-align: center;
 }
 
-/* Newton's Cradle Related Styles - Start */
-.cradle {
-  height: 25vh;
-  width: 100%;
-  display: flex;
-  flex: 1;
-  justify-content: center;
+.small-text {
+  font-size: 0.75rem;
 }
-
-.ball {
-  margin-top: 5rem;
-  height: 3rem;
-  width: 3rem;
-  border-radius: 50%;
-  background-color: #e4e4ef;
-  transform-origin: 50% -6rem;
-  align-self: center;
-  position: relative;
-}
-
-.ball::before {
-  content: "";
-  position: absolute;
-  top: -6rem;             
-  left: 50%;
-  width: 0.1rem;          
-  height: 6rem;           
-  background: whitesmoke;
-}
-
-.ball.first {
-  animation: first-ball 1s alternate ease-in infinite;
-}
-
-@keyframes first-ball {
-  0%{
-    transform: rotate(45deg);
-  }
-  50%{
-    transform: rotate(0deg);
-  }
-}
-
-.ball.last {
-  animation: last-ball 1s alternate ease-out infinite;
-}
-
-@keyframes last-ball {
-  50%{
-    transform: rotate(0deg);
-  }
-  100%{
-    transform: rotate(-45deg);
-  }
-}
-/* Newton's Cradle Related Styles - End */
